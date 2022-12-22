@@ -1,5 +1,5 @@
 clc; clear all; close all;
-n = 100; % % N_B number of sample points
+n = 100; % 
 A = [-1,0,1,0,0;0,-1,0,1,0];
 b = [0;0];
 nvars = 5;
@@ -25,7 +25,6 @@ p1x = 0;
 p4x = -0.1; 
 p4y = -0.017;
 n = 100;
-% Plot Figures
 figure(1)
 for i = 1:length(p1y)
     [b_x, b_y,theta_m(i,:)] = bezier(p1x,p1y(i),p2x(i),p2y(i),p3x(i),p3y(i),p4x,p4y,n);
